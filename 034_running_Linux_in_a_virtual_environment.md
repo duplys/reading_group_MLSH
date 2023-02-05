@@ -68,4 +68,5 @@ $ sudo modprobe vboxdrv
 
 If this is the case, you can start Virtualbox and fire up your virtual machine!
 
+## Network issues in centOS 7 installation
 If you install centOS 7 and there is no Internet connection after you boot the centOS 7 VM, you need to do what is described for the headless in [this post](https://unix.stackexchange.com/questions/78295/centos-no-network-interface-after-installation-in-virtualbox).
