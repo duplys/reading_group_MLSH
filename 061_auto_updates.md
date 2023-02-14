@@ -28,3 +28,8 @@ You can verify that the timer is running using:
 ```
 
 Check `man dnf-automatic` for more infos.
+
+## Best Practices in Enterprise Setting
+* Restrict what packages end users are allowed to install
+* Maintain own repositories with approved packages and approved updates
+* Test updates on a separate test network before allowing them to be installed on a production network
