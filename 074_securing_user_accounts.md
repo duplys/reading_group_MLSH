@@ -5,4 +5,5 @@
 Moreover, `sudo` allows users to perform the tasks with elevated privileges by entering their own password (no risk that a threat actor learns the `root` password). Finally, `sudo` improves auditing capabilities because you'll be able to see what users are doing with their admin privileges.
 
 ## `sudo` logs
-TBD
+According to this post, on RHEL-based Linux systems sudo logs are in `/var/log/secure` and on Debian-based Linux systems it's in `/var/log/auth.log`.
+
