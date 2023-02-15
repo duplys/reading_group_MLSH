@@ -23,12 +23,18 @@ According to this post, on RHEL-based Linux systems sudo logs are in `/var/log/s
   * can execute any command (the 3rd `ALL`)
 * User alias in `sudoers` file: `User_Alias ADMINS = jsmith, mikem`
 
+## `sudo` privileges
+* to find out your `sudo` privileges: `sudo -l`
+* 
+
 ## Disabling `root` account
 * `sudo passwd -l root` locks the password of the given account by adding a `!` in front of the password which turns it into a value that match no possible hash value
 
 ## `sudo` timer
 * by default, once a user call `sudo` and enters their password, they can perform another `sudo` command within five minutes without having to re-enter their password
 * set `sudo` timer to 0 by `sudo -k`
+* to set `sudo` timer to 0 by default, `sudo visudo` and add the line `Defaults timestamp_timeout = 0`
+* you can also set `sudo` timer for a specific user by adding the line `Defaults:lionel timestamp_timeout = 0`
 
 ## Misc
 * `su - lionel` login to user `lionel` account
