@@ -11,6 +11,7 @@ According to this post, on RHEL-based Linux systems sudo logs are in `/var/log/s
 * `groups` shows the groups a user is in
 * Under centOS, the admin users are in the `wheel` group, under Debian they're in `sudo` group.
 * `sudo usermod -a -G wheel maggie` to add user `maggie` to the group `wheel`
+* create user by `sudo useradd lionel`
 
 ## `sudo` policy file
 * always open by doing `sudo visudo`
