@@ -25,3 +25,10 @@ According to this post, on RHEL-based Linux systems sudo logs are in `/var/log/s
 
 ## Disabling `root` account
 * `sudo passwd -l root` locks the password of the given account by adding a `!` in front of the password which turns it into a value that match no possible hash value
+
+## `sudo` timer
+* by default, once a user call `sudo` and enters their password, they can perform another `sudo` command within five minutes without having to re-enter their password
+* set `sudo` timer to 0 by `sudo -k`
+
+## Misc
+* `su - lionel` login to user `lionel` account
