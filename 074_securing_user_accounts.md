@@ -89,3 +89,6 @@ $ ecryptfs-unwrap-passphrase
 Passphrase: <enter cleopatra's password>
 24674a5572...1ffd
 ```
+
+## Enforcing strong password criteria
+* tbd
