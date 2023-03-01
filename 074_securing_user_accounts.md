@@ -82,8 +82,10 @@ In addition, never allow users to run with `sudo` privileges scripts that are in
 $ sudo adduser --encrypt-home cleopatra
 ```
 
-When `cleopatra` logs in for the first time, she'll want to write her passphrase down and store it in a safe place by executing
+When `cleopatra` logs in for the first time, she'll want to write her passphrase down and store it in a safe place by executing:
 
 ```shell
 $ ecryptfs-unwrap-passphrase
+Passphrase: <enter cleopatra's password>
+24674a5572...1ffd
 ```
